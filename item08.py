@@ -9,6 +9,6 @@ n = int(input('Enter n-size of chocolate: '))
 m = int(input('Enter m-size of chocolate: '))
 k = int(input('How many pieces do you need? '))
 
-flag = 'yes' if ((k % n == 0) or (k % m == 0)) else 'no'
+flag = 'yes' if (((k % n == 0) or (k % m == 0)) and ((n * m) > k)) else 'no'
 
 print(flag)
